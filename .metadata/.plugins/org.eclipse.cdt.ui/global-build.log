@@ -1,0 +1,215 @@
+15:58:51 **** Incremental Build of configuration Debug for project A3_SERVER ****
+make all 
+Building target: A3_SERVER
+Invoking: GCC C Linker
+gcc  -o "A3_SERVER"  ./myHTTP.o   -lpthread
+Finished building target: A3_SERVER
+ 
+15:59:00 **** Incremental Build of configuration Debug for project A3 ****
+make all 
+make: Nothing to be done for 'all'.
+15:59:34 **** Incremental Build of configuration Debug for project A3_SERVER ****
+make all 
+make: Nothing to be done for 'all'.
+16:04:36 **** Incremental Build of configuration Debug for project A3_SERVER ****
+make all 
+Building file: ../myHTTP.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -pthread -MMD -MP -MF"myHTTP.d" -MT"myHTTP.d" -o "myHTTP.o" "../myHTTP.c"
+../myHTTP.c: In function ‘main’:
+../myHTTP.c:62:6: warning: pointer targets in passing argument 3 of ‘accept’ differ in signedness [-Wpointer-sign]
+      &clilen) ;
+      ^
+In file included from ../myHTTP.h:5:0,
+                 from ../myHTTP.c:1:
+/usr/include/x86_64-linux-gnu/sys/socket.h:243:12: note: expected ‘socklen_t * __restrict__’ but argument is of type ‘int *’
+ extern int accept (int __fd, __SOCKADDR_ARG __addr,
+            ^
+../myHTTP.c: In function ‘busythread’:
+../myHTTP.c:119:11: warning: unused variable ‘buf’ [-Wunused-variable]
+  char     buf[HTTP_REQUEST_LENGHT];
+           ^
+../myHTTP.c:118:10: warning: unused variable ‘i’ [-Wunused-variable]
+  int     i;
+          ^
+../myHTTP.c:117:10: warning: variable ‘sockfd’ set but not used [-Wunused-but-set-variable]
+  int     sockfd, newsockfd ; /* Socket descriptors */
+          ^
+../myHTTP.c: In function ‘handleRequest’:
+../myHTTP.c:154:10: warning: variable ‘sockfd’ set but not used [-Wunused-but-set-variable]
+  int     sockfd, newsockfd ; /* Socket descriptors */
+          ^
+../myHTTP.c:148:6: warning: unused variable ‘rc’ [-Wunused-variable]
+  int rc = getnameinfo((struct sockaddr *)&client_addr, client_len, hoststr, sizeof(hoststr), portstr, sizeof(portstr), NI_NUMERICHOST | NI_NUMERICSERV);
+      ^
+../myHTTP.c: In function ‘readFile’:
+../myHTTP.c:358:4: warning: implicit declaration of function ‘strptime’ [-Wimplicit-function-declaration]
+    strptime(LMT_C,"%a, %d %b %Y %H:%M:%S GMT",timeinfo);
+    ^
+../myHTTP.c:346:10: warning: unused variable ‘c’ [-Wunused-variable]
+     char c;
+          ^
+../myHTTP.c:345:12: warning: unused variable ‘n’ [-Wunused-variable]
+     size_t n = 0;
+            ^
+../myHTTP.c: In function ‘handelPutRequest’:
+../myHTTP.c:533:6: warning: unused variable ‘sockfd’ [-Wunused-variable]
+  int sockfd;
+      ^
+../myHTTP.c: In function ‘busythread’:
+../myHTTP.c:125:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+../myHTTP.c: In function ‘HTTP_parser’:
+../myHTTP.c:635:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+../myHTTP.c: In function ‘handleGetRequest’:
+../myHTTP.c:287:12: warning: ‘LMT’ is used uninitialized in this function [-Wuninitialized]
+     char  *data = readFile(filePath,&size,&status,LMT, LMT_C);
+            ^
+Finished building: ../myHTTP.c
+ 
+Building target: A3_SERVER
+Invoking: GCC C Linker
+gcc  -o "A3_SERVER"  ./myHTTP.o   -lpthread
+Finished building target: A3_SERVER
+ 
+16:10:13 **** Incremental Build of configuration Debug for project A3_SERVER ****
+make all 
+Building file: ../myHTTP.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -pthread -MMD -MP -MF"myHTTP.d" -MT"myHTTP.d" -o "myHTTP.o" "../myHTTP.c"
+../myHTTP.c: In function ‘main’:
+../myHTTP.c:62:6: warning: pointer targets in passing argument 3 of ‘accept’ differ in signedness [-Wpointer-sign]
+      &clilen) ;
+      ^
+In file included from ../myHTTP.h:5:0,
+                 from ../myHTTP.c:1:
+/usr/include/x86_64-linux-gnu/sys/socket.h:243:12: note: expected ‘socklen_t * __restrict__’ but argument is of type ‘int *’
+ extern int accept (int __fd, __SOCKADDR_ARG __addr,
+            ^
+../myHTTP.c: In function ‘busythread’:
+../myHTTP.c:119:11: warning: unused variable ‘buf’ [-Wunused-variable]
+  char     buf[HTTP_REQUEST_LENGHT];
+           ^
+../myHTTP.c:118:10: warning: unused variable ‘i’ [-Wunused-variable]
+  int     i;
+          ^
+../myHTTP.c:117:10: warning: variable ‘sockfd’ set but not used [-Wunused-but-set-variable]
+  int     sockfd, newsockfd ; /* Socket descriptors */
+          ^
+../myHTTP.c: In function ‘handleRequest’:
+../myHTTP.c:154:10: warning: variable ‘sockfd’ set but not used [-Wunused-but-set-variable]
+  int     sockfd, newsockfd ; /* Socket descriptors */
+          ^
+../myHTTP.c:148:6: warning: unused variable ‘rc’ [-Wunused-variable]
+  int rc = getnameinfo((struct sockaddr *)&client_addr, client_len, hoststr, sizeof(hoststr), portstr, sizeof(portstr), NI_NUMERICHOST | NI_NUMERICSERV);
+      ^
+../myHTTP.c: In function ‘readFile’:
+../myHTTP.c:358:4: warning: implicit declaration of function ‘strptime’ [-Wimplicit-function-declaration]
+    strptime(LMT_C,"%a, %d %b %Y %H:%M:%S GMT",timeinfo);
+    ^
+../myHTTP.c:346:10: warning: unused variable ‘c’ [-Wunused-variable]
+     char c;
+          ^
+../myHTTP.c:345:12: warning: unused variable ‘n’ [-Wunused-variable]
+     size_t n = 0;
+            ^
+../myHTTP.c: In function ‘handelPutRequest’:
+../myHTTP.c:533:6: warning: unused variable ‘sockfd’ [-Wunused-variable]
+  int sockfd;
+      ^
+../myHTTP.c: In function ‘busythread’:
+../myHTTP.c:125:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+../myHTTP.c: In function ‘HTTP_parser’:
+../myHTTP.c:635:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+Finished building: ../myHTTP.c
+ 
+Building target: A3_SERVER
+Invoking: GCC C Linker
+gcc  -o "A3_SERVER"  ./myHTTP.o   -lpthread
+Finished building target: A3_SERVER
+ 
+16:10:59 **** Incremental Build of configuration Debug for project A3_SERVER ****
+make all 
+make: Nothing to be done for 'all'.
+16:11:08 **** Incremental Build of configuration Debug for project A3_SERVER ****
+make all 
+make: Nothing to be done for 'all'.
+09:34:01 **** Incremental Build of configuration Debug for project A3_SERVER ****
+make all 
+Building file: ../myHTTP.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -pthread -MMD -MP -MF"myHTTP.d" -MT"myHTTP.d" -o "myHTTP.o" "../myHTTP.c"
+../myHTTP.c: In function ‘main’:
+../myHTTP.c:62:6: warning: pointer targets in passing argument 3 of ‘accept’ differ in signedness [-Wpointer-sign]
+      &clilen) ;
+      ^
+In file included from ../myHTTP.h:5:0,
+                 from ../myHTTP.c:1:
+/usr/include/x86_64-linux-gnu/sys/socket.h:243:12: note: expected ‘socklen_t * __restrict__’ but argument is of type ‘int *’
+ extern int accept (int __fd, __SOCKADDR_ARG __addr,
+            ^
+../myHTTP.c: In function ‘busythread’:
+../myHTTP.c:119:11: warning: unused variable ‘buf’ [-Wunused-variable]
+  char     buf[HTTP_REQUEST_LENGHT];
+           ^
+../myHTTP.c:118:10: warning: unused variable ‘i’ [-Wunused-variable]
+  int     i;
+          ^
+../myHTTP.c:117:10: warning: variable ‘sockfd’ set but not used [-Wunused-but-set-variable]
+  int     sockfd, newsockfd ; /* Socket descriptors */
+          ^
+../myHTTP.c: In function ‘handleRequest’:
+../myHTTP.c:154:10: warning: variable ‘sockfd’ set but not used [-Wunused-but-set-variable]
+  int     sockfd, newsockfd ; /* Socket descriptors */
+          ^
+../myHTTP.c:148:6: warning: unused variable ‘rc’ [-Wunused-variable]
+  int rc = getnameinfo((struct sockaddr *)&client_addr, client_len, hoststr, sizeof(hoststr), portstr, sizeof(portstr), NI_NUMERICHOST | NI_NUMERICSERV);
+      ^
+../myHTTP.c: In function ‘readFile’:
+../myHTTP.c:359:4: warning: implicit declaration of function ‘strptime’ [-Wimplicit-function-declaration]
+    strptime(LMT_C,"%a, %d %b %Y %H:%M:%S GMT",timeinfo);
+    ^
+../myHTTP.c:347:10: warning: unused variable ‘c’ [-Wunused-variable]
+     char c;
+          ^
+../myHTTP.c:346:12: warning: unused variable ‘n’ [-Wunused-variable]
+     size_t n = 0;
+            ^
+../myHTTP.c: In function ‘handelPutRequest’:
+../myHTTP.c:533:6: warning: unused variable ‘sockfd’ [-Wunused-variable]
+  int sockfd;
+      ^
+../myHTTP.c: In function ‘busythread’:
+../myHTTP.c:125:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+../myHTTP.c: In function ‘HTTP_parser’:
+../myHTTP.c:635:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+Finished building: ../myHTTP.c
+ 
+Building target: A3_SERVER
+Invoking: GCC C Linker
+gcc  -o "A3_SERVER"  ./myHTTP.o   -lpthread
+Finished building target: A3_SERVER
+ 
+09:35:37 **** Incremental Build of configuration Debug for project A3 ****
+make all 
+make: Nothing to be done for 'all'.
+09:37:34 **** Incremental Build of configuration Debug for project A3 ****
+make all 
+make: Nothing to be done for 'all'.
+09:39:30 **** Incremental Build of configuration Debug for project A3 ****
+make all 
+make: Nothing to be done for 'all'.
+09:57:03 **** Incremental Build of configuration Debug for project A3 ****
+make all 
+make: Nothing to be done for 'all'.

@@ -1,0 +1,6 @@
+09:57:03 **** Incremental Build of configuration Debug for project A3 ****
+make all 
+make: Nothing to be done for 'all'.
+
+09:57:03 Build Finished (took 75ms)
+
